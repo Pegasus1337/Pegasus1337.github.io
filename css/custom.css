@@ -1,0 +1,609 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Light.ttf");
+    
+    }
+    @font-face {
+        font-family: "Gilroy-Medium";
+        src: url("../fonts/Gilroy/Gilroy-Medium.ttf");
+        
+        }
+        @font-face {
+            font-family: "Gilroy-Bold";
+            src: url("../fonts/Gilroy/Gilroy-Bold.ttf");
+            
+            }
+:root {
+    --purple : #1a1936 ; 
+    --dark_blue : #121330; 
+    --light_grey : #797a8e; 
+    --pink : #ff3465 ; 
+    --feedCardSize  : 10rem ;
+    --scrollbarBackground : #080916 ; 
+    --topImageHeight : 75vh ;
+
+  }
+
+*{
+    box-sizing: border-box ;
+    padding : 0 !important ; 
+    margin: 0 !important;
+    font-family : 'Gilroy',sans-serif ; 
+    scroll-behavior: smooth !important; 
+}
+/* Scroll bar code */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--light_grey) var(--scrollbarBackground);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--scrollbarBackground);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--light_grey);
+    border-radius: 20px;
+    border: 3px solid var(--scrollbarBackground);
+  }
+/* Scroll bar code */
+body{
+    background-color : var(--dark_blue) ; 
+}
+svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: currentColor;
+}
+
+.btn:focus{
+    outline : none !important ;
+}
+.ic-handler{
+    width : 1rem ; 
+    height: 1rem ;
+    margin-right : 0.8rem !important ; 
+    margin-left : -2rem !important;
+}
+.vanish{
+    display:none !important ;
+}
+.handlerBar{
+    background-color : var(--purple) ; 
+    height : 100vh !important ; 
+    overflow-y: scroll !important;
+ 
+}
+.logoHolder{
+    background-color: var(--light_grey);
+    height : 7rem ; 
+    width : 10rem ; 
+    margin : 2rem auto !important ;
+    position : relative !important ;
+    border-radius: 10px ;
+    
+}
+.logoHolder p{
+    position : absolute !important ;
+    color : white !important; 
+    text-transform: uppercase   !important; 
+    font-size:1.2rem !important; 
+    font-weight: bold;
+    top : 50% ;
+    left : 50% ; 
+    transform: translate(-50%,-50%);
+
+}
+
+.navBtn{
+    background-color:  transparent !important ;
+    color :var(--light_grey) ; 
+    width : 80% !important ; 
+    padding : 0.5rem 1rem !important; 
+    margin : 0.4rem auto 0.4rem 1rem !important;
+}
+
+.navBtn:hover,.playlistBtn:hover,.followedChannelsBtn:hover{
+    background-color :rgba(54, 54, 54, 0.63) !important; 
+    color : rgb(216, 214, 214) !important;
+}
+
+
+
+.active{
+    background-color : var(--pink) !important; 
+    color : white !important; 
+    border-radius: 20px;     
+}
+#trending,#followers{
+    color : var(--light_grey) ; 
+}
+
+#trending svg , #followers svg{
+    width : 1.2rem !important ; 
+    height: 1.2rem !important;
+    margin-left : -2rem !important;
+}
+.handlerSectionTitle{
+    text-transform: uppercase ;
+    width : 75% ; 
+    margin : 1rem auto 1rem 1rem !important;
+    color : var(--light_grey) ; 
+    padding-left : 1rem !important ;
+    font-weight: bold;
+    pointer-events: none;
+}
+#history img , #myVids img{
+    margin-left : -1.7rem !important ;
+}
+
+.playlistBtn{
+    display  :block ; 
+    background-color:  transparent !important ;
+    outline :none !important ; 
+    color :var(--light_grey) ; 
+    width : 75% !important ; 
+    padding : 0.5rem 1rem !important; 
+    margin : 0.4rem auto 0.4rem 1rem !important;
+}
+.playlistBtn img{
+    width : 1rem ; 
+    height: 1rem ;
+    margin-right : 0.8rem !important ; 
+ 
+   
+}
+
+.followedChannelsBtn{
+    display  :block ; 
+    background-color:  transparent !important ;
+    outline :none !important ; 
+    color :var(--light_grey) ; 
+    width : 75% !important ; 
+    padding : 0.5rem 1rem !important; 
+    margin : 0.4rem auto 0.4rem 1rem !important;
+}
+
+.followedChannelsBtn img{
+    border-radius: 50% !important;
+    width : 2rem !important ;
+    height: 2rem !important;
+    margin-right : 0.6rem !important ;
+
+}
+.tagsContainer{
+    width : 75% !important ; 
+    margin : 1rem auto !important ;
+}
+
+.tagBtn{
+    color: var(--light_grey) ; 
+    border-radius : 20px ; 
+    background-color: #91919c2d;
+    text-transform: uppercase ;
+    font-size : 0.7rem ;
+    padding : 0.2rem  0.4rem !important;
+    margin : 0.2rem 0.5rem 0.2rem 0 !important ; 
+    transition : 0.2s ease-in-out !important;
+    
+}
+
+.tagBtn:hover{
+    background-color: var(--pink);
+    color : white ; 
+}
+.main_section{
+    height : 100vh !important ; 
+    position : relative !important  ; 
+    overflow-y: scroll !important;
+   
+}
+
+.topSection{
+    height : var(--topImageHeight) !important; 
+}
+.landing_image_container{
+    position: absolute ; 
+    top : 0 !important; 
+    left : 0 !important; 
+    width: 100% !important;
+    height : var(--topImageHeight) !important ; 
+    overflow-y: hidden !important;
+  
+}
+
+.landing_image_container img{
+    width : 100% !important;
+}
+
+.image_overlay{
+    width : 100% !important ; 
+    height: 100% !important ;
+    position : absolute ; 
+    top : 0 ; 
+    left : 0 ; 
+    z-index: 2 !important;
+    background: rgb(18,19,48);
+    background: linear-gradient(180deg, rgba(18,19,48,0.46122198879551823) 0%, rgba(18,19,48,0.6292892156862745) 43%, rgba(18,19,48,1) 100%);
+}
+.overlayed-elements{
+    z-index : 3 !important ; 
+}
+
+
+.discoverSection,.trendingSection,.followingSection,.vidOftheDaySection{
+    margin : 1rem auto 2.5rem 1.5rem !important ; 
+}
+.discoverSection{
+    margin-top:1.7rem !important ;
+}
+
+.sectionTitle{
+    color : white !important; 
+    font-size : 1.7rem ;
+    text-transform: uppercase;
+    font-weight: bold ;
+    pointer-events: none !important;
+}
+
+.ic-section{
+    width  : 1.7rem ; 
+    height: 1.7rem;
+}
+
+.discoverHeader,.trendingHeader,.followingHeader{
+    position  :relative !important ; 
+    width : 100% !important; 
+}
+
+.ScrollButtonsBlock{
+    position : absolute !important ; 
+    top : 50% ; 
+    right : 2.5rem !important ; 
+    transform: translateY(-50%);
+}
+
+.scrollBtn ,.ic-scroll{
+    color : white ; 
+    height:  2rem !important; 
+    width:  2rem !important;
+    margin : auto 0.5rem !important ;
+}
+.ic-scroll{
+    margin : 0  !important ;
+    opacity : 0.75 !important ;
+    
+}
+
+.ic-scroll:hover,.ic-scroll:focus{
+    opacity : 1 !important ;
+}
+.scrollBtn:focus{
+    outline : none !important ;
+    
+}
+
+.discoverFeedContainer,.trendingFeedContainer,.followingFeedContainer{
+    margin : 1.5rem 0 !important; 
+    
+}
+.feedCard{
+    display:inline-block !important ;
+    margin : 0.5rem 0.7rem !important ;
+    vertical-align: top !important;
+}
+.thumbnail {
+    position :relative !important; 
+    width: var(--feedCardSize) !important;
+}
+.thumbnail img{
+    
+    height : var(--feedCardSize)  !important;
+    width: var(--feedCardSize) !important;
+    border-radius : 10px ; 
+    cursor: pointer;
+}
+.feedDuration{
+    position : absolute !important;
+    top : 0.5rem ; 
+    right : 0.5rem ; 
+    background-color: rgba(54, 54, 54, 0.774) ;
+    border-radius : 5px ; 
+    color : rgba(255, 255, 255, 0.74) ; 
+    padding : 0.2rem 0.3rem  !important;
+    pointer-events: none ;
+    z-index: 1 !important;
+}
+
+.feedTitle{
+    display: block !important;
+    color : rgba(207, 205, 205, 0.856) ; 
+    width:  var(--feedCardSize)  !important;
+    margin : 1rem 0 !important; 
+    margin-bottom : 0.5rem !important ; 
+
+}
+.feedViews{
+    display: block !important;
+    color : var(--light_grey) ; 
+    width:  var(--feedCardSize)  !important;
+    margin : 0 0 !important; 
+}
+
+.searchBar{
+    background-color : rgba(255, 253, 253, 0.212) !important ; 
+    border-color : transparent !important ; 
+    border-radius: 7px !important;
+    color : rgba(236, 236, 236, 0.849) !important ; 
+    padding : 1.55rem !important ; 
+    width : 80% !important ;
+    outline : none !important ; 
+    padding-left : 4rem !important; 
+    margin : 1.5rem  auto  1.5rem 2rem !important;
+    font-family :'Gilroy-Medium',sans-serif !important; 
+    
+}
+
+.searchBar::placeholder{
+    color : rgba(236, 236, 236, 0.849) !important ; 
+    
+}
+
+.searchBarContainer{
+    position :relative !important ;
+    color : rgba(236, 236, 236, 0.849) !important ; 
+
+}
+.ic-search {
+    width: 1.5rem !important ; 
+    height: 1.5rem !important;
+    position : absolute !important ;
+    top : 50% !important ; 
+    left : 2.5rem !important ; 
+    transform: translate(50%,-45%) !important;  
+}
+
+.uploadVideoWrapper,.notificationBtn{
+
+    margin : 1.5rem  auto  1.5rem 2rem !important;
+    font-family :'Gilroy-Medium',sans-serif !important; 
+}
+
+.uploadVideoButton,.notificationBtn{
+    border-color : rgba(236, 236, 236, 0.849) !important ; 
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 7px !important;
+    background-color : transparent !important ; 
+    padding : 0.7rem !important ; 
+    color : rgba(236, 236, 236, 0.849) !important ; 
+    outline : none !important ; 
+    transition: 0.2s ease-in-out !important;
+}
+.uploadVideoButton:hover{
+    color : var(--purple) !important ; 
+    background-color: rgba(236, 236, 236, 0.849) !important;
+}
+.ic-upload{
+    width : 1.5rem !important ; 
+    height : 1.5rem !important ; 
+    margin-right : 0.3rem !important ;
+}
+.notificationBtn{
+    border-color :transparent !important ;
+
+}
+.ic-notification{
+    width : 1.7rem !important ; 
+    height : 1.7rem !important ; 
+    margin-left : 0.5rem !important ;
+    margin-right : 0.5rem !important ;
+}
+
+.profileMenu{
+    margin-top : 1.5rem !important ;
+    margin-left : 1rem !important ;
+    cursor: pointer;
+}
+.profileMenu img{
+    width : 3rem !important ;
+    height: 3rem !important;
+    border-radius: 5px !important;
+    border-color : var(--pink) ; 
+    border-width: 2px !important;
+    border-style: solid !important;
+}
+
+
+.fixedTitleinSection,.songTitle{
+    color : white !important; 
+    font-size : 1rem ;
+    text-transform: uppercase;
+    font-weight: bold ;
+    pointer-events: none !important;
+}
+.fixedTitleinSection{
+    color: white !important ;
+    opacity: 0.85 !important;
+}
+
+.ic-cup {
+    width:  1rem !important ;
+    height: 1rem  !important ;
+}
+.songTitle{
+font-size : 2rem !important ;
+margin-top : 0.6rem !important ;
+font-family: 'Gilroy-Medium',sans-serif !important;
+width : 85% !important ;
+}
+
+.fullSongTitle{
+    margin-top : 1.5rem !important ;
+    font-family: 'Gilroy',sans-serif !important;
+    color : white !important; 
+    opacity : 0.9 !important ;
+    font-size : 1.3rem !important;
+    text-transform: uppercase;
+    pointer-events: none !important;
+    width : 85% !important ;
+
+}
+.sharerProfile{
+    margin : 0.5rem  !important ; 
+    vertical-align: top !important;  
+    margin-top : 0.8rem !important;
+    
+}
+#sharerProfilePicture{
+    width : 3rem !important; 
+    height: 3rem !important;
+    border-radius: 50% ;
+    display:inline-block !important ;
+    margin-top : -1rem !important ;
+}
+.profileInformationHolder{
+    display:inline-block !important ;
+    margin-left : 1rem !important;
+    color : var(--light_grey)    !important ;
+    font-family: 'Gilroy',sans-serif !important;
+    font-weight: bold;
+   
+}
+
+.vidOfTheDayButtonsBlock{
+    margin-top : 1.2rem !important ;
+    margin-bottom : 1.2rem!important ;
+}
+
+
+.vidOftheDayButton{ 
+    border-radius : 20px ; 
+    border-color: var(--light_grey);
+    color : var(--light_grey);
+    border-width: 1px !important;
+    border-style: solid ;
+    font-size : 1rem ;
+    padding : 0.2rem  0.4rem !important;
+    margin : 0.2rem 0.5rem 0.2rem 0 !important ; 
+    transition : 0.2s ease-in-out !important;
+    width : auto !important;
+    padding: 0.2rem 0.6rem !important;  
+    vertical-align :middle; 
+    transition : 0.2s ease-in-out !important ;
+}
+
+.ic-vidOftheDay{
+    width : 1rem ;
+    height: 1rem ;
+    margin-top : -0.1rem !important ;
+    margin-right : 0.7rem !important ;
+   
+}
+
+#like:hover,#reply:hover,#view:hover{ 
+    border-color: var(--pink);
+    color : var(--pink);
+    
+}
+.left-preHeader{
+    color: white !important ;
+    opacity: 0.85 !important;
+    text-align:right !important ;
+    font-size : 0.9rem !important ;
+}
+
+.left-Header{
+text-transform: uppercase !important;
+color: rgb(228, 228, 228) !important ;
+font-family:'Gilroy',sans-serif !important ;
+font-weight: bold ;
+text-align:right !important ;
+margin : 0.3rem 0 !important;
+margin-bottom : 0.6rem !important ;
+
+}
+.previousVideoOftheDayBlock{
+    
+    background-color: rgba(221, 220, 220, 0.137) ;
+    border-radius: 5px;
+    margin : 1rem 0 !important ;
+    padding : 0.1rem 0.3rem !important ;
+    position :relative !important ;
+    
+}
+.previousSharerProfile{
+    margin : 0.5rem  0 !important ; 
+    vertical-align: top !important;  
+    margin-top : 0.2rem !important;
+
+}
+
+#previousSharerProfilePicture{
+    width : 3rem !important; 
+    height: 3rem !important;
+    border-radius: 50% ;
+    display:inline-block !important ;
+    margin-top : -1rem !important ;
+    margin-left : 0.5rem !important ;
+}
+.songInformationHolder{
+    display:inline-block !important ;
+    margin-left : 1rem !important;
+    color : var(--light_grey)    !important ;
+    font-family: 'Gilroy',sans-serif !important;
+    font-weight: bold;
+}
+.PreviousSongTitle,.previousSongReleaseDate{
+    color : white !important ;
+}
+.previousSongReleaseDate{
+color  : rgba(255, 255, 255, 0.692) !important; 
+font-size : 0.8rem ;    
+}
+
+.playSongBlock{
+    display: inline-block !important ; 
+    width : 3rem !important; 
+    height: 3rem !important;
+}
+.playsongButton{
+    position : absolute !important ;
+    top : 50% ;
+    right : 0rem !important ;
+    transform: translate(-50%,-30%);
+    display:inline-block !important ;
+    text-align:right !important;
+    padding-bottom: -1rem !important;
+    color : rgba(219, 217, 217, 0.829) !important ;
+}
+.playsongButton:hover{
+    color : var(--pink) !important; 
+}
+.ic-play{
+    width : 3rem !important; 
+    height: 3rem !important;
+    margin-top : -0.65rem !important ;
+    margin-left : 3rem !important ;
+}
+
+.playActive{
+    color : var(--pink) !important ; 
+}
+
+
+
+
+/* Media Queries  : pls don't be stupid and place anything under this if it's not media query*/
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    :root {
+        --topImageHeight : 47vh ;
+        --feedCardSize  : 15rem ;
+    
+      }
+  }

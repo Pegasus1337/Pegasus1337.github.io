@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sketch</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+    
+    <div class="row">
+        <div class="col col-md-3 handlerBar justify-content-md-center " >
+            <div class="logoHolder center">
+                <p>logo :D</p>
+            </div>
+            <div class="navigationButtons">
+                <a href="#discoverSectionId" class="btn navBtn active" id="discover"><svg x="0px" y="0px" viewBox="0 0 339.921 339.921"
+                        style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve" class="ic-handler">
+                        <g>
+                            <path d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                       c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
+                       c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
+                       l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
+                       c5.836,6.016,15.452,6.195,21.49,0.354l22.828-22.088C340.827,307.735,340.99,298.125,335.165,292.071z M182.306,181.81
+                       c-32.852,32.857-86.312,32.857-119.159,0.011c-32.852-32.852-32.847-86.318,0-119.164c32.847-32.852,86.307-32.847,119.148,0.005
+                       C215.152,95.509,215.152,148.964,182.306,181.81z" /></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g></g><g></g><g></g><g></g><g></g>
+                    </svg>Discover</a>
+                <a href="#trendingSectionId" class="btn navBtn " id="trending"><svg class="ic-handler" viewBox="-80 0 512 512.00071"
+                        width="512pt" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m284.90625 132.957031c-3.484375-5.761719-10.378906-8.5-16.867188-6.691406-6.484374 1.808594-10.972656 7.71875-10.972656 14.449219 0 18.308594-14.894531 33.199218-33.199218 33.199218-18.304688 0-33.199219-14.890624-33.199219-33.199218v-125.714844c0-6.066406-3.65625-11.535156-9.261719-13.855469-5.605469-2.324219-12.054688-1.042969-16.34375 3.25-1.6875 1.683594-41.683594 41.917969-82.207031 102.703125-23.898438 35.84375-42.96875 71.398438-56.679688 105.675782-17.367187 43.425781-26.175781 84.996093-26.175781 123.5625 0 96.859374 78.804688 175.664062 175.667969 175.664062 96.859375 0 175.664062-78.804688 175.664062-175.664062.003907-62.003907-22.347656-130.429688-66.425781-203.378907zm-9.148438 199.476563c0 8.285156-6.714843 15-15 15-8.28125 0-15-6.714844-15-15v-28.050782l-74.6875 74.691407c-2.816406 2.8125-6.628906 4.390625-10.609374 4.390625-3.976563 0-7.792969-1.578125-10.605469-4.390625l-34.835938-34.839844-23.476562 23.476563c-5.859375 5.859374-15.355469 5.859374-21.214844 0-5.859375-5.859376-5.859375-15.355469 0-21.214844l34.085937-34.082032c5.859376-5.855468 15.355469-5.855468 21.214844.003907l34.832032 34.835937 64.085937-64.085937h-28.054687c-8.285157 0-15-6.714844-15-15 0-8.285157 6.714843-15 15-15h64.269531c8.28125 0 15 6.71875 15 15v64.265625zm0 0" />
+                    </svg>Trending</a>
+                <a href="#folowingSectionId" class="btn navBtn " id="followers"><svg class="ic-handler" viewBox="0 1 511 511.999"
+                        width="511pt" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256.496094 206.730469c-32.226563 0-58.445313 26.222656-58.445313 58.449219v40.085937h116.898438v-40.085937c-.003907-32.226563-26.222657-58.449219-58.453125-58.449219zm0 0" />
+                        <path
+                            d="m256.496094 176.730469c22.738281 0 41.234375-18.496094 41.234375-41.230469s-18.496094-41.234375-41.234375-41.234375c-22.734375 0-41.230469 18.5-41.230469 41.234375s18.496094 41.230469 41.230469 41.230469zm0 0" />
+                        <path
+                            d="m457.332031 0h-401.667969c-30.417968 0-55.164062 24.746094-55.164062 55.164062v294.238282c0 30.421875 24.746094 55.167968 55.164062 55.167968h127.296876l42.160156 84.316407c7.339844 14.6875 18.777344 23.113281 31.375 23.113281 12.601562 0 24.035156-8.425781 31.378906-23.113281l42.160156-84.316407h127.296875c30.417969 0 55.164063-24.746093 55.164063-55.167968v-294.238282c0-30.417968-24.746094-55.164062-55.164063-55.164062zm-112.386719 320.265625c0 8.285156-6.714843 15-15 15h-146.894531c-8.285156 0-15-6.714844-15-15v-55.082031c0-31.890625 16.960938-59.886719 42.335938-75.453125-15.355469-13.074219-25.121094-32.527344-25.121094-54.230469 0-39.277344 31.953125-71.234375 71.230469-71.234375 39.28125 0 71.234375 31.957031 71.234375 71.234375 0 21.703125-9.765625 41.15625-25.125 54.230469 25.375 15.566406 42.339843 43.566406 42.339843 75.453125zm0 0" />
+                    </svg>Following</a>
+            </div>
+            <div class="your-videos">
+                <p class="handlerSectionTitle">your videos</p>
+                <button class="btn navBtn" id="favorite"><svg class="ic-handler" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
+                        <path d="M326.632,10.346c-38.733,0-74.991,17.537-99.132,46.92c-24.141-29.383-60.399-46.92-99.132-46.92
+                   C57.586,10.346,0,67.931,0,138.714c0,55.426,33.049,119.535,98.23,190.546c50.162,54.649,104.729,96.96,120.257,108.626l9.01,6.769
+                   l9.009-6.768c15.53-11.667,70.099-53.979,120.26-108.625C421.95,258.251,455,194.141,455,138.714
+                   C455,67.931,397.414,10.346,326.632,10.346z" /> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g>
+                    </svg>
+                    Favorites</button>
+                <button class="btn navBtn" id="myVids"><svg class="ic-handler" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 407.51 407.51" style="enable-background:new 0 0 407.51 407.51;"
+                        xml:space="preserve">
+                        <g>
+                            <g>
+                                <g>
+                                    <polygon points="167.184,301.453 235.624,261.224 167.184,220.996 			" />
+                                    <path d="M360.49,112.327H47.02c-25.969,0-47.02,21.052-47.02,47.02v198.531c0,25.969,21.052,47.02,47.02,47.02H360.49
+                               c25.969,0,47.02-21.052,47.02-47.02V159.347C407.51,133.378,386.458,112.327,360.49,112.327z M264.628,265.658
+                               c-0.961,1.926-2.523,3.487-4.448,4.449l-99.788,58.514c-1.534,1.058-3.362,1.606-5.224,1.567l-4.702-1.567
+                               c-2.95-1.941-4.565-5.371-4.18-8.882V202.71c-0.385-3.51,1.229-6.941,4.18-8.882c3-2.022,6.926-2.022,9.927,0l99.788,58.514
+                               C265.085,254.791,267.076,260.752,264.628,265.658z" />
+                                    <path d="M53.812,80.98H354.22c5.771,0,10.449-4.678,10.449-10.449s-4.678-10.449-10.449-10.449H53.812
+                               c-5.771,0-10.449,4.678-10.449,10.449S48.041,80.98,53.812,80.98z" />
+                                    <path d="M98.22,23.51H309.29c5.771,0,10.449-4.678,10.449-10.449S315.061,2.612,309.29,2.612H98.22
+                               c-5.771,0-10.449,4.678-10.449,10.449S92.45,23.51,98.22,23.51z" /> </g> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g>
+                    </svg>My Videos</button>
+                <button class="btn navBtn" id="history">
+                    <svg class="ic-handler" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 0c-140.609375 0-256 115.390625-256 256s115.390625 256 256 256c44.796875 0 88.902344-11.835938 127.527344-34.234375l-15.058594-25.957031c-34.054688 19.746094-72.949219 30.191406-112.46875 30.191406-124.070312 0-226-101.929688-226-226s101.929688-226 226-226 226 101.929688 226 226c0 39.902344-10.441406 78.867188-30 112.71875v-36.71875h-30v90h90v-30h-39.023438c25.195313-40.328125 39.023438-88.222656 39.023438-136 0-140.609375-115.390625-256-256-256zm0 0" />
+                        <path
+                            d="m256 90c-90.980469 0-166 75.019531-166 166s75.019531 166 166 166 166-75.019531 166-166-75.019531-166-166-166zm105 181h-120v-121h30v91h90zm0 0" />
+                    </svg>My History</button>
+
+            </div>
+            <div class="playlist">
+                <p class="handlerSectionTitle">my playlist</p>
+                <button class="btn playlistBtn"><img src="./icons/list.png" alt="">English Songs</button>
+                <button class="btn playlistBtn"><img src="./icons/list.png" alt="">French Songs</button>
+                <button class="btn playlistBtn"><img src="./icons/list.png" alt="">Arabic Songs</button>
+            </div>
+
+            <div class="followedChannels">
+                <p class="handlerSectionTitle">Channels</p>
+                
+                
+                    <button class="btn followedChannelsBtn"><img src="./profile_pictures/profilePic1.jpg" alt="">John Marco</button>
+                    <button class="btn followedChannelsBtn"><img src="./profile_pictures/profilePic2.jpg" alt="">John Marco</button>
+                    <button class="btn followedChannelsBtn"><img src="./profile_pictures/profilePic3.jpg" alt="">John Marco</button>
+                    <button class="btn followedChannelsBtn"><img src="./profile_pictures/profilePic4.jpg" alt="">John Marco</button>
+
+            </div>
+            <div class="popularTags">
+                <p class="handlerSectionTitle">popular hashtags</p>
+                <div class="tagsContainer">
+                    <button class="btn tagBtn">kakashi</button>
+                    <button class="btn tagBtn">gaming</button>
+                    <button class="btn tagBtn">jujutsu</button>
+                    <button class="btn tagBtn">shingeki no kyojin</button>
+                    <button class="btn tagBtn">omae wa mo</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col  main_section">
+            <div class="topSection">
+                <div class="landing_image_container">
+                    <img src="./img/banner_logo.jpg" alt="">
+                    <div class="image_overlay">
+                    <div class="overlayed-elements">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <form class="d-flex searchBarContainer">
+                                    <svg x="0px" y="0px" viewBox="0 0 339.921 339.921"
+                                    style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve" class="ic-search">
+                                    <g>
+                                        <path d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                                   c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
+                                   c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
+                                   l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
+                                   c5.836,6.016,15.452,6.195,21.49,0.354l22.828-22.088C340.827,307.735,340.99,298.125,335.165,292.071z M182.306,181.81
+                                   c-32.852,32.857-86.312,32.857-119.159,0.011c-32.852-32.852-32.847-86.318,0-119.164c32.847-32.852,86.307-32.847,119.148,0.005
+                                   C215.152,95.509,215.152,148.964,182.306,181.81z" /></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g></g><g></g><g></g><g></g><g></g>
+                                </svg>
+                                    <input class="form-control me-2 searchBar" type="search" placeholder="Search here" aria-label="Search">
+                                    
+                             
+                                </form>
+                            </div>
+                            <div class="col">
+                                <div class="uploadVideoWrapper">
+                                    <button class="btn uploadVideoButton"><svg class="ic-upload" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400.548 400.548" style="enable-background:new 0 0 400.548 400.548;" xml:space="preserve"> <path d="M383.86,99.79c-10.104-4.184-21.731-1.873-29.466,5.86l-51.507,51.512v-31.397c0-22.359-18.13-40.491-40.493-40.491H40.493 C18.131,85.274,0,103.406,0,125.765v149.018c0,22.359,18.131,40.491,40.493,40.491h221.901c22.363,0,40.493-18.132,40.493-40.491 v-31.398l51.507,51.512c5.177,5.174,12.088,7.924,19.126,7.924c3.481,0,6.995-0.678,10.34-2.063 c10.099-4.185,16.688-14.042,16.688-24.978V124.767C400.548,113.831,393.959,103.974,383.86,99.79z M190.309,210.764l-55.191,42.403 c-2.354,1.812-5.2,2.738-8.06,2.738c-1.991,0-3.99-0.448-5.846-1.363c-4.519-2.226-7.38-6.825-7.38-11.865v-84.807 c0-5.041,2.861-9.639,7.38-11.864c4.521-2.228,9.911-1.696,13.905,1.375l55.191,42.402c3.26,2.504,5.17,6.381,5.17,10.49 C195.479,204.383,193.569,208.26,190.309,210.764z"/> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>Upload</button>
+                                </div>
+                            </div>
+                            <div class="col notification">
+                                <button class="btn notificationBtn">
+                                    <svg class="ic-notification" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m459.425 391.158h-2.453l-9.801-6.642c-28.261-19.152-45.711-50.96-46.678-85.086l-3.106-109.699c-.844-29.765-10.799-57.986-28.79-81.613-2.51-3.296-7.216-3.933-10.511-1.423-3.295 2.509-3.933 7.215-1.423 10.51 16.078 21.116 24.976 46.341 25.729 72.951l3.106 109.699c1.011 35.687 17.829 69.142 45.454 91.304h-349.905c27.625-22.161 44.442-55.617 45.454-91.304l3.106-109.699c.938-33.087 14.524-64.014 38.259-87.086 23.734-23.072 55.034-35.778 88.134-35.778 28.073 0 54.66 9.01 76.887 26.056 3.289 2.522 7.996 1.9 10.516-1.387 2.521-3.287 1.899-7.995-1.387-10.515-12.301-9.433-25.795-16.663-40.092-21.566 1.06-3.932 1.633-8.061 1.633-12.323 0-26.224-21.334-47.557-47.557-47.557s-47.557 21.333-47.557 47.556c0 4.271.574 8.408 1.638 12.346-19.521 6.685-37.483 17.646-52.672 32.411-26.55 25.808-41.748 60.405-42.797 97.417l-3.106 109.699c-.967 34.126-18.417 65.935-46.678 85.086l-9.801 6.642h-2.453c-18.017 0-32.675 14.658-32.675 32.675s14.658 32.675 32.675 32.675h49.799c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-49.798c-9.746 0-17.675-7.929-17.675-17.675s7.929-17.675 17.675-17.675h406.85c9.746 0 17.675 7.929 17.675 17.675s-7.929 17.675-17.675 17.675h-321.739c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h46.967c8.201 32.315 37.377 55.493 71.347 55.493 34.006 0 63.154-23.211 71.347-55.493h132.078c18.017 0 32.675-14.658 32.675-32.675s-14.659-32.674-32.675-32.674zm-235.982-343.602c0-17.952 14.605-32.556 32.557-32.556s32.557 14.604 32.557 32.556c0 2.843-.373 5.598-1.061 8.228-10.219-2.313-20.76-3.492-31.496-3.492-10.718 0-21.265 1.198-31.489 3.517-.692-2.637-1.068-5.401-1.068-8.253zm32.557 449.444c-25.88 0-48.073-16.578-55.75-40.493h111.5c-7.677 23.915-29.87 40.493-55.75 40.493z"/></g></svg></button>
+                            </div>
+                            <div class="col profileMenu">
+                                <img src="./profile_pictures/profilePic1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="vidOftheDaySection">
+                                    <p class="fixedTitleinSection">Video of the day
+                                        <svg class="ic-cup" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m359.801 429.3-103.801-30-103.801 30c-.899 1.8-1.199 3.6-1.199 5.7v62h210v-62c0-2.1-.3-3.9-1.199-5.7z" fill="#646d73"/></g><path d="m361 497v-62c0-2.1-.3-3.9-1.199-5.7l-103.801-30v97.7z" fill="#474f54"/><path d="m497 30h-76.645c.132-5.067.645-9.84.645-15 0-8.401-6.599-15-15-15h-300c-8.401 0-15 6.599-15 15 0 5.16.513 9.933.643 15h-76.643c-8.291 0-15 6.709-15 15v37.998c0 83.754 67.092 151.791 149.773 156.171 17.225 23.716 37.668 41.316 60.927 51.231-3.6 72.9-45.3 123.6-55.199 134.101-1.501 1.199-2.701 2.999-3.301 4.799h207.601c-.601-1.8-1.8-3.6-3.301-4.799-10.2-10.501-51.6-60.901-55.2-134.101 23.264-9.917 43.83-27.521 61.069-51.246 82.61-4.451 149.631-72.449 149.631-156.156v-37.998c0-8.291-6.709-15-15-15zm-467 52.998v-22.998h62.93c3.893 49.578 14.644 102.086 37.24 146.708-56.64-12.755-100.17-63.265-100.17-123.71zm452 0c0 60.414-43.491 110.9-100.089 123.684 22.417-44.621 33.228-96.621 37.159-146.682h62.93z" fill="#fed843"/><path d="m497 30h-76.645c.132-5.067.645-9.84.645-15 0-8.401-6.599-15-15-15h-150v429.3h103.801c-.601-1.8-1.8-3.6-3.301-4.799-10.2-10.501-51.6-60.901-55.2-134.101 23.264-9.917 43.83-27.521 61.069-51.246 82.61-4.451 149.631-72.449 149.631-156.156v-37.998c0-8.291-6.709-15-15-15zm-15 52.998c0 60.414-43.491 110.9-100.089 123.684 22.419-44.621 33.23-96.621 37.159-146.682h62.93z" fill="#fabe2c"/><g id="Trophy_31_"><g><path d="m279.936 190.796-23.936-12.437-23.936 12.437c-5.01 2.578-11.133 2.153-15.732-1.172-4.6-3.34-6.914-8.994-5.977-14.59l4.395-26.646-19.189-18.94c-4.177-4.072-5.454-10.109-3.75-15.322 1.758-5.391 6.416-9.346 12.041-10.195l26.66-4.014 12.07-24.126c5.098-10.166 21.738-10.166 26.836 0l12.07 24.126 26.66 4.014c5.625.85 10.283 4.805 12.041 10.195 1.758 5.405.322 11.338-3.75 15.322l-19.189 18.94 4.395 26.646c.938 5.596-1.377 11.25-5.977 14.59-4.569 3.311-10.681 3.8-15.732 1.172z" fill="#fabe2c"/></g></g><path d="m279.936 190.796c5.052 2.628 11.164 2.139 15.732-1.172 4.6-3.34 6.914-8.994 5.977-14.59l-4.395-26.646 19.189-18.94c4.072-3.984 5.508-9.917 3.75-15.322-1.758-5.391-6.416-9.346-12.041-10.195l-26.66-4.014-12.07-24.126c-2.549-5.083-7.983-7.625-13.418-7.625v110.193z" fill="#ff9100"/><g><path d="m376 512h-240c-8.291 0-15-6.709-15-15s6.709-15 15-15h240c8.291 0 15 6.709 15 15s-6.709 15-15 15z" fill="#474f54"/></g><path d="m376 482h-120v30h120c8.291 0 15-6.709 15-15s-6.709-15-15-15z" fill="#32393f"/></g></svg></p>
+                                    <p class="songTitle">We don't talk anymore , feat selena gomez</p>
+                                    <p class="fullSongTitle">Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video]</p>
+                                        <div class="vidSharerBlock">
+                                            <div class="sharerProfile">
+                                                <img src="./profile_pictures/profilePic5.jpg" alt="" id="sharerProfilePicture">
+                                                <div class="profileInformationHolder">
+                                                    <p class="sharerProfileName">Slutty Malissa</p>
+                                                    <p class="sharerJoinDate"> 13th , Feburary 2012</p>
+                                                </div>
+                                            </div>
+                                            <div class="vidOfTheDayButtonsBlock">
+                                                <span class="btn vidOftheDayButton" id="like">
+                                                    <svg class="ic-vidOftheDay" height="511pt" viewBox="0 -10 511.99143 511" width="511pt" xmlns="http://www.w3.org/2000/svg"><path d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657"/></svg>256K</span>
+                                                <span class="btn vidOftheDayButton" id="reply">
+                                                    <svg class="ic-vidOftheDay" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m10 7.002v-4.252c0-.301-.181-.573-.458-.691-.276-.117-.599-.058-.814.153l-8.5 8.25c-.146.141-.228.335-.228.538s.082.397.228.538l8.5 8.25c.217.21.539.269.814.153.277-.118.458-.39.458-.691v-4.25h1.418c4.636 0 8.91 2.52 11.153 6.572l.021.038c.134.244.388.39.658.39.062 0 .124-.007.186-.023.332-.085.564-.384.564-.727 0-7.774-6.257-14.114-14-14.248z"/></svg>2.5K</span>
+                                                <span class="btn vidOftheDayButton" id="view"><svg version="1.1" class="ic-vidOftheDay" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 488.85 488.85" style="enable-background:new 0 0 488.85 488.85;" xml:space="preserve"> <g> <path d="M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2 s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025 c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3 C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7 c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>1.6M</span>
+                                            </div>
+                                        </div>
+                                
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="last3DaysVideosOfTheDay">
+                                    <p class="left-preHeader">Last 3 days</p>
+                                    <p class="left-Header">video of the day</p>
+                                        <div class="previousVideoOftheDayBlock">
+                                            <div class="previousSharerProfile">
+                                                <img id="previousSharerProfilePicture" src="./profile_pictures/profilePic2.jpg" alt="" >
+                                                <div class="songInformationHolder">
+                                                    <p class="PreviousSongTitle">Steady Joe Nails it</p>
+                                                    <p class="previousSongReleaseDate"> 23th , July 2018</p>
+                                                </div>
+                                                <div class="playSongBlock">
+                                                    <span class="btn playsongButton playActive"><svg class="ic-play" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496 C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/> </g> </g> <g> <g> <polygon points="189.776,141.328 189.776,370.992 388.672,256.16 "/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </span>
+                                                </div>
+
+                                            </div>    
+                                        </div>
+                                        <div class="previousVideoOftheDayBlock">
+                                            <div class="previousSharerProfile">
+                                                <img id="previousSharerProfilePicture" src="./profile_pictures/profilePic4.jpg" alt="" >
+                                                <div class="songInformationHolder">
+                                                    <p class="PreviousSongTitle">Idk , fml :3</p>
+                                                    <p class="previousSongReleaseDate"> 1st , November 2020</p>
+                                                </div>
+                                                <div class="playSongBlock">
+                                                    <span class="btn playsongButton"><svg class="ic-play" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496 C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/> </g> </g> <g> <g> <polygon points="189.776,141.328 189.776,370.992 388.672,256.16 "/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </span>
+                                                </div>
+
+                                            </div>    
+                                        </div>
+                                        <div class="previousVideoOftheDayBlock">
+                                            <div class="previousSharerProfile">
+                                                <img id="previousSharerProfilePicture" src="./profile_pictures/profilePic5.jpg" alt="" >
+                                                <div class="songInformationHolder">
+                                                    <p class="PreviousSongTitle">For the Horde</p>
+                                                    <p class="previousSongReleaseDate"> 25th , August 2019</p>
+                                                </div>
+                                                <div class="playSongBlock">
+                                                    <span class="btn playsongButton"><svg class="ic-play" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496 C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/> </g> </g> <g> <g> <polygon points="189.776,141.328 189.776,370.992 388.672,256.16 "/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </span>
+                                                </div>
+
+                                            </div>    
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--  Discover Section -->
+            <div class="discoverSection" id="discoverSectionId">
+                <div class="discoverHeader">
+                    <p class="sectionTitle"><svg class="ic-section" x="0px" y="0px" viewBox="0 0 339.921 339.921"
+                        style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve" class="ic-handler">
+                        <g>
+                            <path d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                       c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
+                       c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
+                       l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
+                       c5.836,6.016,15.452,6.195,21.49,0.354l22.828-22.088C340.827,307.735,340.99,298.125,335.165,292.071z M182.306,181.81
+                       c-32.852,32.857-86.312,32.857-119.159,0.011c-32.852-32.852-32.847-86.318,0-119.164c32.847-32.852,86.307-32.847,119.148,0.005
+                       C215.152,95.509,215.152,148.964,182.306,181.81z" /></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g></g><g></g><g></g><g></g><g></g>
+                    </svg> Discover </p>
+                    <div class="ScrollButtonsBlock">
+                        <button class="btn scrollBtn disabled" id="leftScrollButton"><svg class="ic-scroll" transform='rotate(180)' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"> <g> <g> <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </button>
+                        <button class="btn scrollBtn" id="rightScrollButton"><svg class="ic-scroll"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"> <g> <g> <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </button>
+                    </div>
+                </div>
+                <div class="discoverFeedContainer">
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_1.jpg" alt="">
+                            <span class="feedDuration">11:20</span>
+                        </div>
+                        <div class="feedTitle">Shawn Mendes , Treat you better</div>
+                        <div class="feedViews">635,125 views</div>
+                    </div>
+
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_2.jpg" alt="">
+                            <span class="feedDuration">1:38</span>
+                        </div>
+                        <div class="feedTitle">Boku no Hero Academia - Kimi no Chikara</div>
+                        <div class="feedViews">5,024,030 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_3.jpg" alt="">
+                            <span class="feedDuration">5:10</span>
+                        </div>
+                        <div class="feedTitle">Bastille - Pompeii</div>
+                        <div class="feedViews">755,527 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_4.jpg" alt="">
+                            <span class="feedDuration">7:05</span>
+                        </div>
+                        <div class="feedTitle">The BEST and WORST purchases for 3D artists</div>
+                        <div class="feedViews">126,122 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_5.jpg" alt="">
+                            <span class="feedDuration">7:05</span>
+                        </div>
+                        <div class="feedTitle">Raccoon: “don’t touch my grapes”</div>
+                        <div class="feedViews">452,136 views</div>
+                    </div>
+                </div>
+               
+            </div>
+
+            <!--  Trending Section -->
+            <div class="trendingSection" id="trendingSectionId">
+                <div class="trendingHeader">
+                    <p class="sectionTitle"><svg class="ic-section" viewBox="-80 0 512 512.00071"
+                        width="512pt" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m284.90625 132.957031c-3.484375-5.761719-10.378906-8.5-16.867188-6.691406-6.484374 1.808594-10.972656 7.71875-10.972656 14.449219 0 18.308594-14.894531 33.199218-33.199218 33.199218-18.304688 0-33.199219-14.890624-33.199219-33.199218v-125.714844c0-6.066406-3.65625-11.535156-9.261719-13.855469-5.605469-2.324219-12.054688-1.042969-16.34375 3.25-1.6875 1.683594-41.683594 41.917969-82.207031 102.703125-23.898438 35.84375-42.96875 71.398438-56.679688 105.675782-17.367187 43.425781-26.175781 84.996093-26.175781 123.5625 0 96.859374 78.804688 175.664062 175.667969 175.664062 96.859375 0 175.664062-78.804688 175.664062-175.664062.003907-62.003907-22.347656-130.429688-66.425781-203.378907zm-9.148438 199.476563c0 8.285156-6.714843 15-15 15-8.28125 0-15-6.714844-15-15v-28.050782l-74.6875 74.691407c-2.816406 2.8125-6.628906 4.390625-10.609374 4.390625-3.976563 0-7.792969-1.578125-10.605469-4.390625l-34.835938-34.839844-23.476562 23.476563c-5.859375 5.859374-15.355469 5.859374-21.214844 0-5.859375-5.859376-5.859375-15.355469 0-21.214844l34.085937-34.082032c5.859376-5.855468 15.355469-5.855468 21.214844.003907l34.832032 34.835937 64.085937-64.085937h-28.054687c-8.285157 0-15-6.714844-15-15 0-8.285157 6.714843-15 15-15h64.269531c8.28125 0 15 6.71875 15 15v64.265625zm0 0" />
+                    </svg> Trending </p>
+                    <div class="ScrollButtonsBlock">
+                        <button class="btn scrollBtn disabled" id="leftScrollButton"><svg class="ic-scroll" transform='rotate(180)' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"> <g> <g> <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </button>
+                        <button class="btn scrollBtn" id="rightScrollButton"><svg class="ic-scroll"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"> <g> <g> <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </button>
+                    </div>
+                </div>
+                <div class="trendingFeedContainer">
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_6.jpg" alt="">
+                            <span class="feedDuration">4:32</span>
+                        </div>
+                        <div class="feedTitle">Demon Slayer: Kimetsu no Yaiba OST - To Destroy The Evil</div>
+                        <div class="feedViews">52,195 views</div>
+                    </div>
+
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_7.jpg" alt="">
+                            <span class="feedDuration">1:20</span>
+                        </div>
+                        <div class="feedTitle">Alan Walker - Faded</div>
+                        <div class="feedViews">524,038 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_8.jpg" alt="">
+                            <span class="feedDuration">5:10</span>
+                        </div>
+                        <div class="feedTitle">Bastille - Pompeii</div>
+                        <div class="feedViews">755,527 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_9.jpg" alt="">
+                            <span class="feedDuration">10:05</span>
+                        </div>
+                        <div class="feedTitle"> Yakuza OST - Baka Mitai (ばかみたい) Kiryu full version</div>
+                        <div class="feedViews">16,127 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_10.jpg" alt="">
+                            <span class="feedDuration">7:05</span>
+                        </div>
+                        <div class="feedTitle">Raccoon: “don’t touch my grapes”</div>
+                        <div class="feedViews">42,121 views</div>
+                    </div>
+                </div>
+               
+            </div>
+
+            <!-- Following Section -->
+            <div class="followingSection" id="folowingSectionId">
+                <div class="followingHeader">
+                    <p class="sectionTitle"><svg class="ic-section" viewBox="0 1 511 511.999"
+                        width="511pt" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256.496094 206.730469c-32.226563 0-58.445313 26.222656-58.445313 58.449219v40.085937h116.898438v-40.085937c-.003907-32.226563-26.222657-58.449219-58.453125-58.449219zm0 0" />
+                        <path
+                            d="m256.496094 176.730469c22.738281 0 41.234375-18.496094 41.234375-41.230469s-18.496094-41.234375-41.234375-41.234375c-22.734375 0-41.230469 18.5-41.230469 41.234375s18.496094 41.230469 41.230469 41.230469zm0 0" />
+                        <path
+                            d="m457.332031 0h-401.667969c-30.417968 0-55.164062 24.746094-55.164062 55.164062v294.238282c0 30.421875 24.746094 55.167968 55.164062 55.167968h127.296876l42.160156 84.316407c7.339844 14.6875 18.777344 23.113281 31.375 23.113281 12.601562 0 24.035156-8.425781 31.378906-23.113281l42.160156-84.316407h127.296875c30.417969 0 55.164063-24.746093 55.164063-55.167968v-294.238282c0-30.417968-24.746094-55.164062-55.164063-55.164062zm-112.386719 320.265625c0 8.285156-6.714843 15-15 15h-146.894531c-8.285156 0-15-6.714844-15-15v-55.082031c0-31.890625 16.960938-59.886719 42.335938-75.453125-15.355469-13.074219-25.121094-32.527344-25.121094-54.230469 0-39.277344 31.953125-71.234375 71.230469-71.234375 39.28125 0 71.234375 31.957031 71.234375 71.234375 0 21.703125-9.765625 41.15625-25.125 54.230469 25.375 15.566406 42.339843 43.566406 42.339843 75.453125zm0 0" />
+                    </svg> Following </p>
+                    <div class="ScrollButtonsBlock">
+                        <button class="btn scrollBtn disabled" id="leftScrollButton"><svg class="ic-scroll" transform='rotate(180)' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"> <g> <g> <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </button>
+                        <button class="btn scrollBtn" id="rightScrollButton"><svg class="ic-scroll"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve"> <g> <g> <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg> </button>
+                    </div>
+                </div>
+                <div class="followingFeedContainer">
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_11.jpg" alt="">
+                            <span class="feedDuration">52:12</span>
+                        </div>
+                        <div class="feedTitle">Demon Slayer: Kimetsu no Yaiba OST - To Destroy The Evil</div>
+                        <div class="feedViews">425,123 views</div>
+                    </div>
+
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_12.jpg" alt="">
+                            <span class="feedDuration">4:30</span>
+                        </div>
+                        <div class="feedTitle">Alan Walker - Faded</div>
+                        <div class="feedViews">11,259 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_13.jpg" alt="">
+                            <span class="feedDuration">8:10</span>
+                        </div>
+                        <div class="feedTitle">Bastille - Pompeii</div>
+                        <div class="feedViews">98,123 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_14.jpg" alt="">
+                            <span class="feedDuration">6:15</span>
+                        </div>
+                        <div class="feedTitle"> Yakuza OST - Baka Mitai (ばかみたい) Kiryu full version</div>
+                        <div class="feedViews">77,136 views</div>
+                    </div>
+                    <div class="feedCard">
+                        <div class="thumbnail">
+                            <img src="./thumbnails/thumbnail_15.jpg" alt="">
+                            <span class="feedDuration">17:45</span>
+                        </div>
+                        <div class="feedTitle">Raccoon: “don’t touch my grapes”</div>
+                        <div class="feedViews">111,569 views</div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="scripts/custom.js"></script>
+</body>
+
+</html>
