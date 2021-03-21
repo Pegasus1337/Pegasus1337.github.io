@@ -274,6 +274,9 @@ svg {
     width:  2rem !important;
     margin : auto 0.5rem !important ;
 }
+.scrollBtn:focus{
+    box-shadow: none ;
+}
 .ic-scroll{
     margin : 0  !important ;
     opacity : 0.75 !important ;
@@ -385,6 +388,9 @@ svg {
     color : rgba(236, 236, 236, 0.849) !important ; 
     outline : none !important ; 
     transition: 0.2s ease-in-out !important;
+}
+.uploadVideoButton:focus{
+    box-shadow : none !important ;
 }
 .uploadVideoButton:hover{
     color : var(--purple) !important ; 
