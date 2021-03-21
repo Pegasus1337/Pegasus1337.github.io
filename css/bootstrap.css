@@ -6009,7 +6009,7 @@ a.close.disabled {
 
 .modal-dialog-centered {
   display: -ms-flexbox;
-  display: flex;
+  display: flex ;
   -ms-flex-align: center;
   align-items: center;
   min-height: calc(100% - 1rem);

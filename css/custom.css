@@ -26,7 +26,7 @@
 
 *{
     box-sizing: border-box ;
-    padding : 0 !important ; 
+    padding : 0  !important; 
     margin: 0 !important;
     font-family : 'Gilroy',sans-serif ; 
     scroll-behavior: smooth !important; 
@@ -296,6 +296,7 @@ svg {
     display:inline-block !important ;
     margin : 0.5rem 0.7rem !important ;
     vertical-align: top !important;
+    cursor: pointer;
 }
 .thumbnail {
     position :relative !important; 
@@ -595,6 +596,32 @@ font-size : 0.8rem ;
 .playActive{
     color : var(--pink) !important ; 
 }
+
+/* Modal Code Section */ 
+/*
+.modal {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1050 !important;
+    display: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    outline: 0 !important;
+  }
+  
+  .modal-dialog {
+    position: relative ;
+    width: auto !important;
+    margin: 0.5rem !important;
+    pointer-events: none !important;
+  }
+
+*/
+  
+
+/* Modal Code Section Ends Here */
 
 
 

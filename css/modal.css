@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Light.ttf");
+    
+    }
+
+body{
+    background-color : #121330;  
+}
+svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: currentColor !important;
+}
+
+.vanish{
+    display:none !important ;
+}
+.gray {
+    color : #525d73 ;
+}
+.gray:hover{
+    color : #7785a0 ;
+}
+
+.btn-pink {
+    color: #fff;
+    background-color: #ff3465;
+    border-color: #ff3465;
+}
+.custom-select{
+    background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23399' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat !important;    
+}
+
+.modal-content {
+    background-color: #1a2940 !important;
+    color : white  ;
+    font-family :'Gilroy',sans-serif ;    
+}
+.acessModalBtn{
+    color : #525e76 ; 
+    text-transform: uppercase ;
+    font-stretch: wider;
+    letter-spacing: 1.5px ;
+    font-weight: bold;
+    font-size : 0.9rem ;
+}
+
+.activeModalBtn{
+    color : rgba(238, 236, 236, 0.87) ;
+    pointer-events: none !important;
+}
+.forms-container{
+    margin-top : 2rem ;
+}
+
+#loginForm .form-group ,#signupForm .form-group{
+    margin : 1.3rem auto ;
+    position : relative ;  
+    color : #525e76 ;
+}
+
+.forms-container input{
+    background-color: #233249 !important;
+    color: rgba(238, 236, 236, 0.87) !important;
+    border : none ; 
+    padding-left : 3rem !important;
+    font-size : 1rem ;
+    font-weight: bold ;
+}
+
+.custom-select{
+    background-color: #233249 !important;
+    color : #525e76 ; 
+    border : none ; 
+    padding-left : 3rem !important;
+    font-size : 1rem ;
+}
+.forms-container input::placeholder,.custom-select{
+    color : #525e76 !important; 
+    font-weight: bold ;
+}
+
+/*
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #ff34637e;
+  }
+ */ 
+
+.ic-form{
+    position : absolute ; 
+    top : 50% ; 
+    left : 1rem ; 
+    transform: translateY(-50%);
+
+}
+#logIn-pass-container{
+    position  : relative !important; 
+}
+#forgotPasswordBtn{
+    position : absolute !important; 
+    top : 50%  ;
+    right : 0 ;
+    transform: translateY(-50%);
+    font-size : 0.8rem ; 
+    color : #ab4452 ; 
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    box-shadow: none !important;
+    transition : 0.05 ease-in-out ; 
+}
+#forgotPasswordBtn:hover{
+    color : #ad1d30 ; 
+}
+
+
+
+#signupForm .form-group{
+    margin : 1rem auto !important;
+}
+#registerBtn {
+    margin-top : 1.9rem !important;
+}
+
+@keyframes forms-animation{
+    from {
+        transform: translateY(-3%);
+        opacity : 0 ;
+    }
+    to {
+        transform: translateY(0);
+        opacity : 1 ;
+    }
+}
+.form-anim{
+    animation-name : forms-animation ;
+    animation-duration : 0.4s;
+    animation-timing-function: linear;
+}
+
+.modal-switcher button {
+    box-shadow:  none !important;
+    transition : 0.05s ease-in-out ;
+}
+.modal-switcher button:hover{
+    color : rgba(200, 229, 248, 0.562) ; 
+}
