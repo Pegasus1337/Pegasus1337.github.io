@@ -1,0 +1,50 @@
+.wrapper-top{
+    height :10vh !important ; 
+    z-index : 0 ;
+
+}
+h2{
+    margin : 2rem 0 ;
+}
+
+.order-form {
+    margin-top : 1.5rem ;
+    width : 60% ; 
+    font-family : 'Gilroy-light',sans-serif;
+    justify-content: center !important;
+    align-items: center;
+    margin : 0 auto ; 
+    z-index : 100000 ;
+}
+
+.order-form p{
+    font-weight: 620 ;
+    margin : 0.9rem 0.5rem  ;
+}
+
+.order-form input[type="text"] , .order-form input[type="email"]{
+    padding : 0.5rem 2.2rem ;
+    margin : 0.5rem 0.5rem ;
+    font-family : 'Gilroy-light',sans-serif ;
+}
+
+input[type="radio"]{
+    margin : 0.5rem 0.8rem ;
+    margin-right : 0.2rem ;
+}
+
+#deliveryAddress{
+    display: block;
+    width : 70% ;
+
+}
+
+.bottom-container > * {
+    display:inline-block ;  
+    margin : 2.8rem  1.7rem ;
+}
+
+.bottom-container {
+    width : 60% ;
+    margin : 0 auto ; 
+}

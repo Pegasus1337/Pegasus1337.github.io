@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an order</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pickBox.css">
+    <link rel="stylesheet" href="css/placeOrder.css">
+</head>
+
+<body>
+    <div class="wrapper-top">
+        <div class="container header-container">
+            <div class="top-header">
+                <div class="header-logo">
+                    <h3>Oh My Cake</h3>
+                </div>
+                <ul class="navbar-list">
+                    <li class="nav-item"><a href=""> Catalog</a></li>
+                    <li class="nav-item"><a href=""> About</a></li>
+                    <li class="nav-item"><a href=""> Delivery and payment</a></li>
+                    <li class="nav-item"><a href=""> Contacts</a></li>
+                    <li class="nav-item homepage active"><a href="index.html"> Go back to homepage</a></li>
+                </ul>
+            </div>
+
+            <img id="cart" src="icons/cart_hover.svg" alt="">
+            
+            
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center pickBox-h2">Place an order</h2>
+            
+            
+                <form  class="order-form">
+                    <div class="nameSurname">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Surname">
+                    </div>
+                    <div class="emailNumber">
+                        <input type="text" placeholder="Phone Number">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <p >Delivery method : </p>
+                    <input type="radio" name="deliveryMethod" value="courier" > 
+                    <label >Courier</label>
+                    <input type="radio" name="deliveryMethod" value="pickUp"> 
+                    <label >Pickup</label>
+                    <input type="text" placeholder="Delivery address" id="deliveryAddress">
+                    <p >Payment method : </p>
+                    <input type="radio" name="paymentMethod" value="courier" > 
+                    <label >Cash</label>
+                    <input type="radio" name="paymentMethod" value="cashCourier"> 
+                    <label >Cash to the courier</label>
+                    <input type="radio" name="paymentMethod" value="onlinePayment"> 
+                    <label >Online payment (5% discount)</label>
+
+                    <div class="bottom-container">
+                        <p class="right-text-bold ">Total : $ 22.4</p>
+                        <button class=" btn-pick ">Place an order</button>
+                    </div>
+                    
+                </form>
+
+                <footer>
+                    <div class="container footer-container">
+                        <div class="navigation">
+                            <ul>
+                                <li><a href="#"> Catalog</a></li>
+                                <li><a href="#"> About</a></li>
+                                <li><a href="#"> Delivery and payment</a></li>
+                                <li><a href="#"> Contacts</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="subscribe text-center">
+                            <p>Subscribe and learn more about promotions</p>
+                            <input type="email" placeholder="email" >
+                            <button  type="submit" class="btn-subscribe">Subscribe</button>
+                            <small>By clicking on the button you agree to the processing of personal data .</small>
+                        </div>
+            
+                        <div class="contact text-center">
+                            <h4>8 (800) 123-45-89</h4>
+                            <p>Saint Petersberg St 458 mbn </p>
+                            <div class="footer-icons">
+                                <a href="#"><img src="icons/twitter.svg" alt=""></a>
+                                <a href="#"><img class="footer-instagram" src="icons/instagram-sketched.svg" alt=""></a>
+                                <a href="#"><img src="icons/vk.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
