@@ -1,0 +1,256 @@
+:root {
+
+    --feedCardSize  : 7rem ;
+    
+
+  }
+
+.video-player-container{
+    padding-top : 5rem !important ;
+    padding-left : 2rem !important ; 
+    margin-bottom : 0.5rem !important ; 
+}
+
+.related-vids-container{
+    padding-left : 7rem !important ; 
+    padding-top : 5rem !important ; 
+}
+.vidSharerBlock{
+    padding-left : 3rem !important;
+    padding-top : -6rem !important ; 
+    padding-bottom : 0.5rem !important ;
+}
+.sharerProfileName{
+    color : #a6a6af ; 
+    font-weight : bold ; 
+}
+.related-title{
+
+    text-transform: uppercase !important;
+    color: rgb(228, 228, 228) !important ;
+    font-family:'Gilroy',sans-serif !important ;
+    font-weight: bold ;
+    margin : 0.3rem 0 !important;
+    margin-bottom : 0.6rem !important ;
+    margin-top : 0 !important ;
+}
+.video-title{
+    padding-left :3rem !important ; 
+    text-transform: uppercase !important;
+    color: rgb(228, 228, 228) !important ;
+    font-family:'Gilroy',sans-serif !important ;
+    font-weight: bold ;
+    margin : 0.3rem 0 !important;
+    margin-bottom : 0.6rem !important ;
+    margin-top : 0 !important ;
+}
+
+.video-description{
+    padding-top : 0.5rem !important ;
+    padding-bottom : 1rem !important ;
+    margin-left : 4rem !important;
+    color : #9e9ea8    !important ;
+    font-family: 'Gilroy',sans-serif !important;
+    font-weight: bold;
+    margin-bottom : 2rem !important ;
+    font-size : 0.9rem ; 
+    line-height: 1.7rem ; 
+    border-top : solid 1px#9e9ea85e  !important ;
+    border-bottom : solid 1px#9e9ea85e  !important ;
+    
+
+}
+
+.like-btn-active,.like-btn:hover{
+    background-color: #ea5f5e !important;
+    color :white !important;
+    transition : 0.2s ease-in-out !important ;
+    
+}
+
+
+.ic-like{
+    width : 1rem ; 
+    height: 1rem ;
+    margin-right : 0.8rem !important ; 
+    
+}
+.like-btn{
+    font-family : 'Gilroy-Medium',sans-serif !important; 
+    padding : 0.3rem  0.42rem !important ; 
+    background-color : transparent  ; 
+    border-color : #ea5f5e ; 
+    color : #ea5f5e ;
+    border-width: 1.5px ;
+    box-shadow:none !important ;
+    outline:none !important ;
+}
+.video-informations{
+    margin-top : 1.3rem !important ;
+    margin-left : -1.5rem !important ;
+    color : #8c8c9b    !important ;
+    opacity: 0.85 !important;
+    text-align:left !important ;
+    font-size : 0.9rem !important ;
+}
+.vid-likes {
+    padding-top :0.2rem !important ;
+}
+.ic-info{
+    width : 1rem ;
+    height: 1rem ;
+    margin-top : -0.1rem !important ;
+    margin-right : 0.2rem !important ;
+   
+}
+.related-vids-container{
+    position :relative !important ;
+    display:block !important ;
+    z-index: 10 !important;
+}
+.actual-vid-container-lol{
+    
+    position :absolute !important ;
+    display:block !important ;
+    top : 6rem !important;
+    left : 7rem !important ;
+    z-index : 99 !important ;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+}
+.feedCard{
+    display:inline-block !important ;
+    margin : 0.5rem 0.7rem !important ;
+    vertical-align: top !important;
+    cursor: pointer;
+    margin-left : 0 !important ;
+    margin-top : 1rem !important ;
+    
+}
+.thumbnail {
+    display:inline-block !important ;
+    position :relative !important; 
+    width: var(--feedCardSize) !important;
+}
+.thumbnail img{
+    height : var(--feedCardSize)  !important;
+    width: var(--feedCardSize) !important;
+    border-radius : 10px ; 
+    cursor: pointer;
+}
+.vid-card-info{
+    display:inline-block !important ;
+    margin-left :0.4rem !important;
+    vertical-align: bottom !important;
+}
+.feedTitle{
+    display: block !important;
+    color : rgba(207, 205, 205, 0.856) ; 
+    width:  var(--feedCardSize)  !important;
+    margin : 1rem 0 !important; 
+    margin-bottom : 0.5rem !important ; 
+    margin-left : 0.0rem !important ;
+    font-size : 0.9rem !important ;
+    width : 5.5rem !important;
+    text-align: left !important;
+
+}
+
+.feedViews{
+    display: block !important;
+    color : var(--light_grey) ; 
+    width:  var(--feedCardSize)  !important;
+    margin : 0 0 !important; 
+    font-size : 0.9rem !important ;
+    width : 5.5rem !important ;
+    text-align: left !important;
+}
+
+.comments-container{
+    margin-left : 3rem !important ;
+    margin-bottom : 4rem  !important ;
+}
+
+.btn-pink{
+    padding : 0.2rem 0.4rem !important ;
+    background-color : transparent ; 
+    border : solid 1.5px var(--pink) !important;
+    color : var(--pink) ;
+    transition : 0.2s ease-in-out ;
+    text-align:right !important ;
+    
+}
+
+.btn-pink:hover{
+    background-color : var(--pink) ; 
+    border : solid 1.5px var(--pink) !important;
+    color : white ;
+}
+.comment-button-container{
+    position :relative !important ;
+    width : 100% !important ;
+}
+.comment-btn{
+    position :absolute !important ;
+    right : 0rem  !important ;
+    top : -0.6rem !important ;
+
+}
+.comment-body-form{
+    background-color : rgba(255, 255, 255, 0.11) !important ; 
+    color : white !important ;
+    padding-left : 1rem !important ;
+}
+
+.add-comment-section{
+    padding-bottom : 1.2rem !important ;
+}
+
+.comment-block{
+    padding-left : 0rem !important;
+    padding-top : 0rem !important ; 
+    padding-bottom : 0.2rem !important ;
+}
+.comments-section-title{
+    padding-left : 3rem !important ;
+    padding-bottom : 1.2rem !important ;
+    color : white !important; 
+    font-size : 1rem ;
+    text-transform: uppercase;
+    font-weight: bold ;
+    pointer-events: none !important;
+}
+.video-js{
+    background-color: rgba(15, 14, 17, 0.836)!important;
+}
+.vjs-poster {
+
+    background-color: rgba(15, 14, 17, 0.836)!important;
+    border-radius: 10px !important ;
+}
+
+
+
+.load-more-btn{
+    text-align: center !important;
+    background-color :#4a2264 !important; 
+    color : rgba(255, 255, 255, 0.877) !important; 
+    padding : 0.2rem 0.5rem !important ;
+    transition : 0.2s ease-in-out ;
+    margin : 2rem 2rem !important ;
+
+}
+.load-more-btn:hover,.load-more-btn:focus{
+    background-color :#341747 !important; 
+    color : white !important; 
+}
+
+.feedCard{
+    padding : 0.4rem 0.2rem !important ;
+    padding-left: 0.4rem !important; 
+    border-radius: 7px !important ;
+}
+.feedCard:hover{
+    background-color: rgba(211, 211, 211, 0.199) !important;
+    
+}

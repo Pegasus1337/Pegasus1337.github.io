@@ -20,7 +20,7 @@
     --pink : #ff3465 ; 
     --feedCardSize  : 10rem ;
     --scrollbarBackground : #080916 ; 
-    --topImageHeight : 75vh ;
+    --topImageHeight : 90vh ;
 
   }
 
@@ -213,7 +213,7 @@ svg {
     left : 0 !important; 
     width: 100% !important;
     height : var(--topImageHeight) !important ; 
-    overflow-y: hidden !important;
+    
   
 }
 
@@ -238,6 +238,9 @@ svg {
 
 .discoverSection,.trendingSection,.followingSection,.vidOftheDaySection{
     margin : 1rem auto 2.5rem 1.5rem !important ; 
+}
+.vidOftheDaySection{
+    margin-top : 4rem !important;
 }
 .discoverSection{
     margin-top:1.7rem !important ;
@@ -523,6 +526,7 @@ width : 85% !important ;
     opacity: 0.85 !important;
     text-align:right !important ;
     font-size : 0.9rem !important ;
+    margin-top : 4rem !important ;
 }
 
 .left-Header{

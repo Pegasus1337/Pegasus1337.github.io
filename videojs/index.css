@@ -1,0 +1,15 @@
+.vjs-theme-custom .vjs-big-play-button {
+  width: 79px;
+  height: 79px;
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.61);
+  border: none;
+  margin: 0 auto;
+  line-height: 79px;
+  top: 40%;
+  left: 45%;
+  border-radius: 15px;
+  margin-top: -51.5px;
+  margin-left: -39.5px;
+}
+
